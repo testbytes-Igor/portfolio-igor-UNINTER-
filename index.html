@@ -11,7 +11,9 @@
 
 <body>
 
-<!-- MENU SUSPENSO -->
+<canvas id="background"></canvas>
+
+<!-- MENU -->
 <header>
 <nav>
 <ul>
@@ -23,21 +25,21 @@
 </nav>
 </header>
 
-<!-- SOBRE MIM + INFORMAÇÕES PESSOAIS -->
+<!-- SOBRE -->
 <section id="sobre">
 
-<h1>Sobre Mim</h1>
+<h1>E aí pessoal,<br>aqui é o Igor 😎</h1>
 
 <div class="sobre-container">
 
-<img src="Foto.jpeg" alt="Foto de Igor" class="foto-perfil">
+<img src="foto.jpeg" alt="Foto de Igor" class="foto-perfil">
 
 <div class="sobre-texto">
 
 <p>
-Meu nome é Igor, tenho 23 anos e sou estudante de Engenharia de Software.
+Meu nome é Igor Prado, tenho 24 anos e sou estudante de Engenharia de Software.<br>
 Atualmente trabalho como líder de laboratório na área de testes e desenvolvimento
-de refrigeradores, realizando ensaios técnicos e análises de desempenho.
+de refrigeradores, realizando ensaios técnicos, análises de desempenho e em processo de acreditação na ISO/IEC17025.
 </p>
 
 <p>
@@ -46,52 +48,124 @@ Gosto de aprender novas ferramentas e desenvolver soluções práticas
 que facilitem processos e análises técnicas.
 </p>
 
-</div>
+<p>
+Estou aos poucos migrando para área tech e acredito que em breve conseguirei minha tão esperada vaga na área.
+</p>
 
+</div>
 </div>
 
 </section>
 
-<!-- FORMAÇÃO ACADEMICA, ESTUDOS -->
+<!-- FORMAÇÃO -->
 <section id="formacao">
 
-<h1>Formação</h1>
+<h1>🎓 Formação Acadêmica e Cursos Complementares</h1>
 
 <ul>
-<li>Graduação em Engenharia de Software</li>
-<li>Curso de Inteligência Emocional</li>
+<li>Graduação em Engenharia de Software - Em andamento</li>
 <li>Treinamento técnico em ensaios de desempenho de refrigeradores</li>
-<li>Conhecimentos em HTML, CSS, JavaScript e banco de dados</li>
+<li>Python</li>
+<li>React</li>
+<li>SQL / Modelagem de Dados</li>
+<li>Git & GitHub</li>
+<li>Automação de processos</li>
+<li>HTML5 e CSS</li>
+</ul>
+
+<h1>🧠 Habilidades Interpessoais</h1>
+
+<ul>
+<li>Liderança e Gestão de Pessoas</li>
+<li>Comunicação clara e objetiva</li>
+<li>Organização e documentação</li>
+<li>Pensamento crítico e analítico</li>
+<li>Rastreabilidade de informações</li>
+<li>Controle de qualidade</li>
+<li>Padronização e automação de processos</li>
 </ul>
 
 </section>
 
-<!-- PORTFOLIO, ATIVIDADES EXTRAS -->
+<!-- PORTFÓLIO -->
 <section id="portfolio">
 
-<h1>Portfólio</h1>
+<h1>🚀 Portfólio</h1>
 
-<p>Alguns projetos que desenvolvi:</p>
+<p><strong>1/1 Sistema de controle de amostras de laboratório</strong></p>
+
+<p>
+Aplicação web desenvolvida para controle, rastreabilidade e auditoria de amostras em ambiente laboratorial,
+substituindo processos manuais e planilhas por uma solução digital segura e auditável.
+</p>
+
+<p>
+O sistema permite registro completo das amostras, acompanhamento de status
+(Em Teste, OK, NOK, Pendente) e histórico detalhado de todas as ações realizadas,
+sempre vinculado ao usuário responsável.
+</p>
+
+<p>
+Conta com dashboard gerencial, filtros avançados por serial, modelo e status,
+além de exportação de dados em CSV para facilitar análises e auditorias.
+</p>
+
+<p>
+Tecnologias utilizadas: React, Supabase e PostgreSQL.
+</p>
+
+<h2>Principais funcionalidades</h2>
 
 <ul>
-<li>Sistema de controle de amostras de laboratório</li>
-<li>Relatórios técnicos automatizados</li>
-<li>Estudos e exercícios de programação</li>
+<li>Autenticação por usuário</li>
+<li>Histórico imutável de ações</li>
+<li>Controle de status (OK / NOK / Em Teste)</li>
+<li>Filtros e exportação CSV</li>
+<li>Dashboard com indicadores</li>
 </ul>
 
-</section>
+<h2>Layout do projeto</h2>
 
-<!-- CONTATO -->
+<img src="API01.jpeg" alt="Dashboard do sistema" class="API">
+<img src="API02.jpeg" alt="Registro de amostras" class="API">
+<img src="API03.jpeg" alt="Cadastro de amostra" class="API">
+
 <section id="contato">
 
-<h1>Contato</h1>
+<h1>📩 Contato</h1>
+
+<div class="contato-container">
 
 <form id="formContato">
 
-<label>Nome:</label>
-<input type="text" id="nome">
+<label for="nome">Nome:</label>
+<input type="text" id="nome" name="nome" placeholder="Digite seu nome">
 
-<label>Email:</label>
-<input type="email" id="email">
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="Digite seu email">
 
-<label>Mensagem:</label>
+<label for="mensagem">Mensagem:</label>
+<textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem"></textarea>
+
+<button type="submit">Enviar</button>
+
+</form>
+
+<div class="redes">
+
+<h2>Minhas redes</h2>
+
+<a href="https://www.linkedin.com/in/igor-prado-6162162b4/" target="_blank">LinkedIn</a>
+<a href="https://github.com/testbytes-Igor" target="_blank">GitHub</a>
+<a href="https://www.instagram.com/igor_kkjk?igsh=bmx3MjV2endzM2hm" target="_blank">Instagram</a>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

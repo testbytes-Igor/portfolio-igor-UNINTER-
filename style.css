@@ -1,21 +1,48 @@
+/* ============================= */
+/* CONFIGURAÇÃO GERAL */
+/* ============================= */
+
 body{
 font-family: Arial;
 margin:0;
-background:#f4f4f4;
+background:black;
+color:white;
+padding-top:80px;
 }
 
-header{
-background:#222;
-padding:15px;
+/* ============================= */
+/* FUNDO ANIMADO */
+/* ============================= */
+
+#background{
 position:fixed;
-width:100%;
 top:0;
+left:0;
+width:100vw;
+height:100vh;
+z-index:0;
+}
+
+/* ============================= */
+/* HEADER / MENU */
+/* ============================= */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#000;
+padding:10px 0;
+z-index:9999;
 }
 
 nav ul{
 display:flex;
 justify-content:center;
+align-items:center;
 list-style:none;
+margin:0;
 padding:0;
 }
 
@@ -29,51 +56,180 @@ text-decoration:none;
 font-weight:bold;
 }
 
-section{
-padding:100px 40px;
-min-height:100vh;
-background:white;
-margin-bottom:10px;
+nav ul li a:hover{
+color:#a78bfa;
+text-shadow:0 0 10px #a78bfa;
+transition:0.3s;
 }
 
-h1{
-color:#333;
+/* ============================= */
+/* SEÇÕES */
+/* ============================= */
+
+section{
+background:rgba(0,0,0,0.65);
+border-radius:10px;
+padding:40px;
+margin:120px auto;
+max-width:1200px;
+position:relative;
+z-index:1;
 }
+
+/* ============================= */
+/* TEXTOS */
+/* ============================= */
+
+h1{
+color:white;
+font-size:48px;
+margin-bottom:20px;
+text-shadow:0 0 10px rgba(184,163,188,0.5);
+}
+
+h2{
+color:#b0aeae;
+font-size:25px;
+margin-bottom:20px;
+text-shadow:0 0 10px rgba(184,163,188,0.5);
+}
+
+p{
+color:#ddd;
+}
+
+/* ============================= */
+/* SOBRE MIM */
+/* ============================= */
+
+.sobre-container{
+display:flex;
+align-items:flex-start;
+gap:40px;
+margin-top:30px;
+flex-wrap:wrap;
+}
+
+.foto-perfil{
+width:300px;
+border-radius:50%;
+box-shadow:0 10px 40px rgba(0,0,0,0.4);
+}
+
+.sobre-texto{
+max-width:700px;
+font-size:22px;
+line-height:1.6;
+}
+
+/* ============================= */
+/* FORMAÇÃO */
+/* ============================= */
+
+#formacao ul{
+list-style:none;
+padding:0;
+font-size:22px;
+}
+
+#formacao li{
+color:#ddd;
+padding:8px 0;
+border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+/* ============================= */
+/* PORTFÓLIO */
+/* ============================= */
+
+#portfolio{
+font-size:22px;
+}
+
+.API{
+width:100%;
+max-width:740px;
+margin-top:10px;
+border-radius:6px;
+}
+
+/* ============================= */
+/* FORMULÁRIO */
+/* ============================= */
 
 form{
 display:flex;
 flex-direction:column;
 max-width:400px;
+margin-top:20px;
+}
+
+label{
+color:white;
+margin-bottom:5px;
 }
 
 input, textarea{
-margin-bottom:10px;
+margin-bottom:15px;
 padding:10px;
+border-radius:6px;
+border:1px solid #444;
+background:#1a1a1a;
+color:white;
+font-size:14px;
+}
+
+input::placeholder,
+textarea::placeholder{
+color:#aaa;
 }
 
 button{
-padding:10px;
+padding:12px;
 background:#333;
 color:white;
 border:none;
+border-radius:6px;
 cursor:pointer;
+transition:0.3s;
 }
 
 button:hover{
 background:#555;
+transform:scale(1.03);
 }
-.sobre-container{
+
+section{
+position:relative;
+z-index:1;
+}
+
+.contato-container{
 display:flex;
+gap:60px;
 align-items:flex-start;
-gap:30px;
-margin-top:20px;
+flex-wrap:wrap;
+margin-top:30px;
 }
 
-.foto-perfil{
-width:200px;
-border-radius:50%;
+.redes{
+display:flex;
+flex-direction:column;
+gap:15px;
+font-size:20px;
 }
 
-.sobre-texto{
-max-width:600px;
+.redes a{
+color:white;
+text-decoration:none;
+padding:10px 15px;
+background:#1a1a1a;
+border-radius:6px;
+transition:0.3s;
+}
+
+.redes a:hover{
+background:#a78bfa;
+color:black;
+transform:scale(1.05);
 }

@@ -95,3 +95,47 @@ requestAnimationFrame(animate);
 animate();
 
 });
+
+// =============================
+// VALIDAÇÃO DO FORMULÁRIO
+// =============================
+
+const form = document.getElementById("formContato");
+
+form.addEventListener("submit", function(event){
+
+event.preventDefault(); // impede envio real
+
+const nome = document.getElementById("nome").value.trim();
+const email = document.getElementById("email").value.trim();
+const mensagem = document.getElementById("mensagem").value.trim();
+
+// regex simples para validar email
+const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if(nome === "" || email === "" || mensagem === ""){
+alert("Por favor, preencha todos os campos.");
+return;
+}
+
+if(!emailValido.test(email)){
+alert("Digite um e-mail válido. Ex: usuario@email.com");
+return;
+}
+
+// simulação de envio
+alert("Mensagem enviada com sucesso!");
+
+// limpa formulário
+form.reset();
+
+});
+
+// Alterar tema
+const btnTema = document.getElementById("temaBtn");
+
+btnTema.addEventListener("click", function(){
+
+document.body.classList.toggle("light");
+
+});
